@@ -1,0 +1,176 @@
+/* CSS Stylesheet */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vh;
+	height: 100vh;
+}
+
+#fullpage {
+	background-color: black;
+	color: white;
+}
+
+
+
+/* Logo Animation */
+
+#logo {
+	animation: fillAnimation 2s ease forwards 2s;
+}
+
+#logo path:nth-child(1) {
+	stroke-dasharray: 279px;
+	stroke-dashoffset: 279px;
+	animation: lineAnimation 2s ease forwards;	
+}
+
+#logo path:nth-child(2) {
+	stroke-dasharray: 226px;
+	stroke-dashoffset: 226px;
+	animation: lineAnimation 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3) {
+	stroke-dasharray: 267px;
+	stroke-dashoffset: 267px;
+	animation: lineAnimation 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4) {
+	stroke-dasharray: 234px;
+	stroke-dashoffset: 234px;
+	animation: lineAnimation 2s ease forwards 0.9s;
+}
+
+
+@keyframes lineAnimation {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fillAnimation {
+	from {
+		fill: transparent;
+	}
+	to {
+		fill: white;
+	}
+}
+
+
+
+/* E Animation */
+
+.E-left-stroke {
+  stroke-dasharray: 124px;
+  stroke-dashoffset: 124px;
+  animation: E-left-move 20s ease forwards;
+}
+
+.E-top-stroke {
+  stroke-dasharray: 47px;
+  stroke-dashoffset: 47px;
+  animation: E-top-move 10s ease forwards;
+}
+
+.E-mid-stroke {
+  stroke-dasharray: 42px;
+  stroke-dashoffset: 42px;
+  animation: E-mid-move 10s ease forwards;
+}
+
+.E-bottom-stroke {
+  stroke-dasharray: 47px;
+  stroke-dashoffset: 47px;
+  animation: E-bottom-move 10s ease forwards;
+}
+
+@keyframes E-left-move {
+  0% {
+    stroke-dashoffset: 124px;
+  }
+  2% {
+    stroke-dashoffset: 124px;
+  }
+  6% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes E-top-move {
+  0% {
+    stroke-dashoffset: 47px;
+  }
+  6% {
+    stroke-dashoffset: 47px;
+  }
+  11% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes E-mid-move {
+  0% {
+    stroke-dashoffset: 42px;
+  }
+  8% {
+    stroke-dashoffset: 42px;
+  }
+  13% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes E-bottom-move {
+  0% {
+    stroke-dashoffset: 47px;
+  }
+  11% {
+    stroke-dashoffset: 47px;
+  }
+  16% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+
+/* O Animation */
+
+.O-stroke {
+  stroke-dasharray: 302px;
+  stroke-dashoffset: 302px;
+  animation: O-move 20s ease forwards;
+}
+
+@keyframes O-move {
+  0% {
+    stroke-dashoffset: 302px;
+  }
+  4% {
+    stroke-dashoffset: 302px;
+  }
+  9% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
