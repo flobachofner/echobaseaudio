@@ -4,11 +4,13 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	background-color: black;
 }
 
 body {
 	width: 100vh;
 	height: 100vh;
+	background-color: black;
 }
 
 #fullpage {
@@ -44,7 +46,11 @@ audio { width: 700px; }
 
 
 /* Socials Page */
-div>i { transition: transform .2s; /* Animation */ }
+div>i { 
+	padding: 0 30px;
+	transition: transform .2s; /* Animation */ 
+}
+
 div>i:hover { transform: scale(1.2); }
 
 
@@ -150,4 +156,57 @@ div>i:hover { transform: scale(1.2); }
 	to {
 		fill: white;
 	}
+}
+
+/* Form */
+#submitButton {
+	margin-left: 40px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+#submitButton:hover {
+	background-color: #1E1E1E;
+}
+
+input, textarea {
+	color: white !important;
+}
+
+/* label color */
+.input-field label {
+ color: #fff !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #fff !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #fff !important;
+ box-shadow: 0 1px 0 0 #fff !important;;
+}
+.input-field input[type=email]:focus {
+ border-bottom: 1px solid #fff !important;
+ box-shadow: 0 1px 0 0 #fff !important;;
+}
+.input-field input[type=textareal]:focus {
+ border-bottom: 1px solid #fff !important;
+ box-shadow: 0 1px 0 0 #fff !important;;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid #fff !important;;
+ box-shadow: 0 1px 0 0 #fff !important;;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+ border-bottom: 1px solid #fff !important;;
+ box-shadow: 0 1px 0 0 #fff !important;;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+ color: #fff !important;;
 }

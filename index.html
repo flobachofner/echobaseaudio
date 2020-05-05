@@ -12,19 +12,19 @@
 	
 	<!-- Stylesheet -->
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
-	<link href="css/styles.scss" type="text/scss" rel="stylesheet">
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	
-	<!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
+
 	
 	<!-- Fullpage.js -->
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
 	
 	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 	
@@ -115,9 +115,35 @@
 		<div class="section" data-anchor="thirdPage">
 			<a href="#secondPage"><i class="fas fa-angle-up arrow-up"></i></a>
 			
-			<label class="mdc-text-field mdc-text-field--outlined">
-			</label>
+			<form class="col-8 offset-2 s12">
+			  <div class="row">
+				<div class="input-field col s6">
+				  <input id="first_name" type="text" class="validate">
+				  <label for="first_name">Vorname</label>
+				</div>
+				<div class="input-field col s6">
+				  <input id="last_name" type="text" class="validate">
+				  <label for="last_name">Nachname</label>
+				</div>
+			  </div>
 			  
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input id="email" type="email" class="validate">
+				  <label for="email">Email</label>
+				</div>
+			  </div>
+				
+			  <div class="row">
+				<div class="input-field col s12">
+				  <textarea id="textarea1" class="materialize-textarea"></textarea>
+				  <label for="textarea1">Anfrage</label>
+				</div>
+			  </div>
+				
+			  <input type="submit" value="Submit" id="submitButton">
+			</form>
+
   		
 			
 			<a href="#fourthPage"><i class="fas fa-angle-down arrow-down"></i></a>
@@ -140,6 +166,9 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.4.1.js"></script>
+	
+	<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	
 	<!-- Fullpage.js -->
 	<script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
@@ -182,7 +211,7 @@
 		Letter 11 is: 135.73397827148438
 		Letter 12 is: 234.1166229248047
 		*/
-		
+				
 	</script>
 </body>
 	
