@@ -17,10 +17,22 @@ body {
 }
 
 
-/* Logo Page */
-#arrow-down {
+/* Page Arrows */
+a {
+	color: white !important;
+}
+
+.arrow-down {
 	position: absolute;
-	top: 80%;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 38px;
+}
+
+.arrow-up {
+	position: absolute;
+	top: 5%;
 	left: 50%;
 	transform: translate(-50%, 0);
 	font-size: 38px;
@@ -32,8 +44,8 @@ audio { width: 700px; }
 
 
 /* Socials Page */
-i { transition: transform .2s; /* Animation */ }
-i:hover { transform: scale(1.2); }
+div>i { transition: transform .2s; /* Animation */ }
+div>i:hover { transform: scale(1.2); }
 
 
 

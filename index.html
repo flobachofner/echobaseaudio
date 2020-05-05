@@ -12,15 +12,19 @@
 	
 	<!-- Stylesheet -->
 	<link href="css/styles.css" type="text/css" rel="stylesheet">
+	<link href="css/styles.scss" type="text/scss" rel="stylesheet">
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+	<!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
 	
 	<!-- Fullpage.js -->
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
 	
 	<!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
 </head>
 	
@@ -29,7 +33,7 @@
 	<div id="fullpage">
 		
 		<!-- Logo -->
-		<div class="section text-center">
+		<div class="section text-center" data-anchor="firstPage">
 			
 			<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="none" viewBox="0 0 753 137" style="enable-background:new 0 0 753 137;" xml:space="preserve">
 			<style type="text/css">
@@ -74,11 +78,14 @@
 				</g>	
 			</svg>
 			<p class="mb-5">by Hannes Bachofner</p>
-			<i id="arrow-down" class="fas fa-angle-down"></i>
+			
+			<a href="#secondPage"><i class="fas fa-angle-down arrow-down"></i></a>
 		</div>
 		
 		<!-- Music -->
-		<div class="section">		
+		<div class="section" data-anchor="secondPage">
+			<a href="#firstPage"><i class="fas fa-angle-up arrow-up"></i></a>
+			
 			<div class="row">
 				<div class="col-2 offset-2">
 					<img alt="cover" class="img-fluid" src="images/cover.jpg">
@@ -100,10 +107,26 @@
 					<audio controls></audio>
 				</div>
 			</div>
+			
+			<a href="#thirdPage"><i class="fas fa-angle-down arrow-down"></i></a>
+		</div>
+		
+		<!-- Contact -->
+		<div class="section" data-anchor="thirdPage">
+			<a href="#secondPage"><i class="fas fa-angle-up arrow-up"></i></a>
+			
+			<label class="mdc-text-field mdc-text-field--outlined">
+			</label>
+			  
+  		
+			
+			<a href="#fourthPage"><i class="fas fa-angle-down arrow-down"></i></a>
 		</div>
 		
 		<!-- Socials -->
-		<div class="section text-center">
+		<div class="section text-center" data-anchor="fourthPage">
+			<a href="#thirdPage"><i class="fas fa-angle-up arrow-up"></i></a>
+			
 			<i class="far fa-paper-plane h1 mx-3"></i>
 			<i class="fab fa-instagram h1 mx-3"></i>
 			<i class="fab fa-facebook-square h1 mx-3"></i>
@@ -130,7 +153,9 @@
 			autoScrolling:true,
 			scrollHorizontally: true,
 			fadingEffect: true,
-			fadingEffectKey: '2130F3C7-16D74552-A0E66290-8A3E3F58'
+			fadingEffectKey: '2130F3C7-16D74552-A0E66290-8A3E3F58',
+			
+			anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage']
 		});
 
 		//methods
@@ -157,6 +182,7 @@
 		Letter 11 is: 135.73397827148438
 		Letter 12 is: 234.1166229248047
 		*/
+		
 	</script>
 </body>
 	
