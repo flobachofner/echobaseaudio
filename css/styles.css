@@ -16,6 +16,7 @@ body {
 #fullpage {
 	background-color: black;
 	color: white;
+	transform: translate3d(0, 0, 0) !important;
 }
 
 
@@ -42,16 +43,18 @@ a {
 
 
 /* Music Page */
-audio { width: 700px; }
+audio { 
+	width: 60vw; 
+}
 
 
 /* Socials Page */
-div>i { 
+a>i { 
 	padding: 0 30px;
 	transition: transform .2s; /* Animation */ 
 }
 
-div>i:hover { transform: scale(1.2); }
+a>i:hover { transform: scale(1.2); }
 
 
 
