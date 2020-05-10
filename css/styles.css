@@ -21,15 +21,13 @@ body {
 
 
 /* Page Arrows */
-a {
-	color: white !important;
-}
 
 .arrow-down {
 	position: absolute;
 	top: 90%;
 	left: 50%;
 	transform: translate(-50%, 0);
+	transition: transform .2s; /* Animation */ 
 	font-size: 38px;
 }
 
@@ -38,24 +36,37 @@ a {
 	top: 5%;
 	left: 50%;
 	transform: translate(-50%, 0);
+	transition: transform .2s; /* Animation */ 
 	font-size: 38px;
 }
+
+.arrow-up:hover, .arrow-down:hover {
+	transform: scale(1.2) translate(-45%, 0);
+}
+
+a {
+	color: white !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.social-icon {
+	padding: 0 30px;
+	transition: transform .2s; /* Animation */ 
+}
+
+.social-icon:hover {
+	transform: scale(1.2);
+}
+
 
 
 /* Music Page */
 audio { 
 	width: 60vw; 
 }
-
-
-/* Socials Page */
-a>i { 
-	padding: 0 30px;
-	transition: transform .2s; /* Animation */ 
-}
-
-a>i:hover { transform: scale(1.2); }
-
 
 
 /* Logo Animation */
@@ -160,6 +171,16 @@ a>i:hover { transform: scale(1.2); }
 		fill: white;
 	}
 }
+
+.subtitle {
+	font-size: 16px;
+}
+
+/* Songs */
+.spaced-font {
+	letter-spacing: 3px;
+}
+
 
 /* Form */
 #submitButton {
