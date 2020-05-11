@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 	
 	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
 
 </head>
 	
@@ -79,13 +79,13 @@
 			</svg>
 			<p class="mb-5 text-muted spaced-font text-uppercase subtitle">Songwriting &nbsp; 
 				- &nbsp; Production &nbsp; - &nbsp; Recording &nbsp; - &nbsp; Mixing</p>
-			
+
 			<p class="mb-5 pt-4 spaced-font subtitle">Hannes Bachofner</p>
 			
 			<a href="#secondPage"><i class="fas fa-angle-down arrow-down"></i></a>
 		</div>
 		
-		<!-- Music -->
+		<!-- Music 1 -->
 		<div class="section" data-anchor="secondPage">
 			<a href="#firstPage"><i class="fas fa-angle-up arrow-up"></i></a>
 			
@@ -148,11 +148,12 @@
 			<a href="#thirdPage">
 				<i class="fas fa-angle-up arrow-up social-icon"></i>
 			</a>
-			
-			<a href="mailto:hannes@echobaseaudio.com">
+
+			<a class="tooltipped" data-margin="8" data-position="bottom" data-tooltip="hannes@echobaseaudio.com" href="mailto:hannes@echobaseaudio.com">
 				<i class="far fa-paper-plane h1 mx-3 social-icon"></i>
 			</a>
-			<a href="tel:0041763381472">
+			<a class="tooltipped" data-margin="10" data-position="bottom" data-tooltip="+41 76 338 14 72" 
+		    href="tel:0041763381472">
 				<i class="fas fa-phone h1 mx-3 social-icon"></i>
 			</a>
 			<a href="https://www.instagram.com/the_echo_base/" target="_blank">
@@ -166,14 +167,14 @@
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed --> 
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.4.1.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-4.4.1.js"></script>
 	
 	<!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
 	
 	<!-- Fullpage.js -->
 	<script type="text/javascript" src="js/fullpage.fadingEffect.min.js"></script>
@@ -194,6 +195,12 @@
 
 		//methods
 		//fullpage_api.setAllowScrolling(false);
+		
+		// Tooltips Initialization
+		$(document).ready(function(){
+			$('.tooltipped').tooltip();
+		  });
+
 		
 	</script>
 </body>
