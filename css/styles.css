@@ -61,6 +61,11 @@ a:hover {
 	transform: scale(1.2);
 }
 
+/* Title Page */
+
+#titleName, #subTitle1, #subTitle2, #subTitle3, #subTitle4, #titleArrowDown {
+	opacity: 0;
+}
 
 
 /* Music Page */

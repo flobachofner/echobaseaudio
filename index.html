@@ -31,7 +31,7 @@
 
 	<div id="fullpage">
 		
-		<!-- Logo -->
+		<!-- Title Page -->
 		<div class="section text-center" data-anchor="firstPage">
 			
 			
@@ -77,15 +77,19 @@
 					 M696.9,72.4c0-8.5-5.8-14.6-14.5-14.6S668,63.9,668,72.4S673.7,87,682.4,87S696.9,80.9,696.9,72.4z"/>
 				</g>	
 			</svg>
-			<p class="mb-5 text-muted spaced-font text-uppercase subtitle">Songwriting &nbsp; 
-				- &nbsp; Production &nbsp; - &nbsp; Recording &nbsp; - &nbsp; Mixing</p>
+			<p class="mb-5 text-muted spaced-font text-uppercase subtitle">
+				<span id="subTitle1">Songwriting &nbsp;</span>
+				<span id="subTitle2">- &nbsp; Production &nbsp;</span>
+				<span id="subTitle3">- &nbsp; Recording &nbsp;</span>
+				<span id="subTitle4">- &nbsp; Mixing</span>
+			</p>
 
-			<p class="mb-5 pt-4 spaced-font subtitle">Hannes Bachofner</p>
+			<p class="mb-5 pt-4 spaced-font subtitle" id="titleName">Hannes Bachofner</p>
 			
-			<a href="#secondPage"><i class="fas fa-angle-down arrow-down"></i></a>
+			<a href="#secondPage"><i class="fas fa-angle-down arrow-down" id="titleArrowDown"></i></a>
 		</div>
 		
-		<!-- Music 1 -->
+		<!-- Music 1 Page -->
 		<div class="section" data-anchor="secondPage">
 			<a href="#firstPage"><i class="fas fa-angle-up arrow-up"></i></a>
 			
@@ -146,7 +150,7 @@
 		<!-- Socials -->
 		<div class="section text-center" data-anchor="fourthPage">
 			<a href="#thirdPage">
-				<i class="fas fa-angle-up arrow-up social-icon"></i>
+				<i class="fas fa-angle-up arrow-up"></i>
 			</a>
 
 			<a class="tooltipped" data-margin="8" data-position="bottom" data-tooltip="hannes@echobaseaudio.com" href="mailto:hannes@echobaseaudio.com">
@@ -199,7 +203,15 @@
 		// Tooltips Initialization
 		$(document).ready(function(){
 			$('.tooltipped').tooltip();
-		  });
+			
+			$('#subTitle1').delay(2500).fadeTo(300, 1);
+			$('#subTitle2').delay(2900).fadeTo(300, 1);
+			$('#subTitle3').delay(3300).fadeTo(300, 1);
+			$('#subTitle4').delay(3700).fadeTo(300, 1);
+			
+			$('#titleName').delay(4000).fadeTo(3000, 1);
+			$('#titleArrowDown').delay(4200).fadeTo(3000, 1);
+		});
 
 		
 	</script>
