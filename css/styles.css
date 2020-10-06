@@ -52,6 +52,10 @@ a:hover {
 	text-decoration: none !important;
 }
 
+.spaced-font {
+	letter-spacing: 3px;
+}
+
 .social-icon {
 	padding: 0 30px;
 	transition: transform .2s; /* Animation */ 
@@ -67,12 +71,55 @@ a:hover {
 	opacity: 0;
 }
 
+/* About Page */
+
+.subtitle-about {
+	letter-spacing: 3px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.text-about {
+	font-size: 14px;
+	line-height: 1.8;
+	letter-spacing: 1.3px;
+	font-weight: 200;
+}
+
 
 /* Music Page */
 audio { 
 	width: 60vw; 
 }
 
+@media only screen and (max-width: 768px){
+	audio {
+		width: 75vw;
+	}
+}
+
+h4 {
+	letter-spacing: 1.8px;
+}
+
+.band-name {
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+}
+
+.band-cover {
+	transition: transform .5s; /* Animation */ 
+}
+
+.band-cover:hover {
+	transform: scale(1.05);
+}
+
+.band-hashtags {
+	padding: 10px;
+	letter-spacing: 1.1px;
+	font-weight: 200;
+}
 
 /* Logo Animation */
 #logo {
@@ -179,63 +226,4 @@ audio {
 
 .subtitle {
 	font-size: 16px;
-}
-
-/* Songs */
-.spaced-font {
-	letter-spacing: 3px;
-}
-
-
-/* Form */
-#submitButton {
-	margin-left: 40px;
-	padding: 10px;
-	border: 1px solid white;
-	border-radius: 5px;
-}
-
-#submitButton:hover {
-	background-color: #1E1E1E;
-}
-
-input, textarea {
-	color: white !important;
-}
-
-/* label color */
-.input-field label {
- color: #fff !important;
-}
-/* label focus color */
-.input-field input[type=text]:focus + label {
- color: #fff !important;
-}
-/* label underline focus color */
-.input-field input[type=text]:focus {
- border-bottom: 1px solid #fff !important;
- box-shadow: 0 1px 0 0 #fff !important;;
-}
-.input-field input[type=email]:focus {
- border-bottom: 1px solid #fff !important;
- box-shadow: 0 1px 0 0 #fff !important;;
-}
-.input-field input[type=textareal]:focus {
- border-bottom: 1px solid #fff !important;
- box-shadow: 0 1px 0 0 #fff !important;;
-}
-
-/* valid color */
-.input-field input[type=text].valid {
- border-bottom: 1px solid #fff !important;;
- box-shadow: 0 1px 0 0 #fff !important;;
-}
-/* invalid color */
-.input-field input[type=text].invalid {
- border-bottom: 1px solid #fff !important;;
- box-shadow: 0 1px 0 0 #fff !important;;
-}
-/* icon prefix focus color */
-.input-field .prefix.active {
- color: #fff !important;;
 }
