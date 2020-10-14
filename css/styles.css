@@ -57,7 +57,7 @@ a:hover {
 }
 
 .social-icon {
-	padding: 0 30px;
+	padding: 32px 30px;
 	transition: transform .2s; /* Animation */ 
 }
 
@@ -73,11 +73,6 @@ a:hover {
 
 /* About Page */
 
-.subtitle-about {
-	letter-spacing: 3px;
-	font-size: 16px;
-	text-transform: uppercase;
-}
 
 .text-about {
 	font-size: 14px;
@@ -86,8 +81,26 @@ a:hover {
 	font-weight: 200;
 }
 
+#bio-image {
+	display: block;
+}
+	
+#bio-block {
+	padding: 0px 0px;
+}
+
+#bio-subtitle {
+	letter-spacing: 3px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+	
+#bio-text {
+	text-align: left;
+}
+
 @media only screen and (max-width: 992px) {
-	#bio-hannes {
+	#bio-image {
 		display: none;
 	}
 	
@@ -100,29 +113,34 @@ a:hover {
 	}
 }
 
-@media only screen and (max-width: 666px) {
-	#bio-text {
-		font-size: 12px;
-	}
-}
-
-@media only screen and (max-width: 523px) {
-	#bio-title {
-		font-size: 18px;
-	}
-	
+@media only screen and (max-width: 663px) {
 	#bio-subtitle {
 		font-size: 13px;
 	}
+}
+
+@media only screen and (max-width: 621px) {
+	#bio-title {
+		font-size: 20px;
+	}
 	
 	#bio-text {
-		font-size: 12px;
+		font-size: 14px;
+		line-height: 1.6;
 	}
 }
 
-@media only screen and (max-width: 523px) {
+@media only screen and (max-width: 574px) {
 	#bio-text {
-		font-size: 10px;
+		font-size: 13px;
+		line-height: 1.5;
+	}
+}
+
+@media only screen and (max-width: 467px) {
+	#bio-text {
+		font-size: 12px;
+		line-height: 1.4;
 	}
 }
 
@@ -161,6 +179,9 @@ h4 {
 	font-weight: 200;
 }
 
+
+
+
 /* Logo Animation */
 #logo {
 	animation: fillAnimation 2s ease forwards 2s;
@@ -189,8 +210,6 @@ h4 {
 	stroke-dashoffset: 234px;
 	animation: lineAnimation 2s ease forwards 0.9s;
 }
-
-
 
 #logo path:nth-child(5) {
 	stroke-dasharray: 289px;
