@@ -82,6 +82,8 @@ a:hover {
 /* About Page */
 #bio-image {
 	display: block;
+	padding-top: 16px;
+	padding-right: 20px;
 }
 	
 #bio-block {
